@@ -40,9 +40,9 @@ This project is a countdown timer that allows users to set a timer for a specifi
 
 Users can set the timer by entering the desired number of seconds into the input field. This can be done using a text input or number input element.
 
-![Image 1](./screenshots/TimerMobile.png)
-![Image 1](./screenshots/TimerDesktop.png)
-![Image 1](./screenshots/TimerSet.png)
+![Mobile](./screenshots/TimerMobile.png)
+![Desktop](./screenshots/TimerDesktop.png)
+![Set Timer](./screenshots/TimerSet.png)
 
 [Github Repo](https://github.com/Smartlify07/Countdown-timer)
 [Vercel Link](https://countdown-timer-crpe.vercel.app/)
