@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --montserrat: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  padding: 1rem;
+  outline: none;
+}
+
+body {
+  background: linear-gradient(-45deg, #04256d, #5400fd);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer-display {
+  border: 12px solid #dce7ff;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer-display h1 {
+  background: linear-gradient(-45deg, #0594bc, #dce7ff);
+  text-align: center;
+  font-family: cursive;
+  font-weight: 800;
+  font-size: 3.5rem;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(148, 40, 40, 0.2);
+}
+
+.control {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #04256d;
+  border-radius: 50%;
+  color: #dce7ff;
+  cursor: pointer;
+}
+
+.timer-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.3rem;
+}
+
+.timer-input {
+  padding: 5px 20px;
+  border-radius: 5px;
+  display: flex;
+  width: 100px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid #dce7ff;
+  font-size: 1.3rem;
+
+  font-family: var(--montserrat);
+  font-weight: bold;
+  color: #dce7ff;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-input:focus {
+  outline: none;
+}
+
+.set-timer {
+  background-color: #0594bc;
+  width: 100px;
+  color: #dce7ff;
+  border-radius: 5px;
+  font-family: var(--montserrat);
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.set-timer:hover {
+  background-color: #5400fd;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
