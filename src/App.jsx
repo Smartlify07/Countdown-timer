@@ -73,7 +73,11 @@ function App() {
         <div className="wrapper">
           <TimerInput value={timerInput} handleChange={handleChange} />
 
-          <button onClick={setTimer} className="set-timer">
+          <button
+            disabled={timerInput === ""}
+            onClick={setTimer}
+            className="set-timer"
+          >
             Set
           </button>
         </div>
