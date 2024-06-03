@@ -53,6 +53,7 @@ function App() {
 
         if (seconds === 0 && minutes === 0) {
           setIsStarted(false);
+          setIsSet(false);
         } else if (seconds === 0) {
           setMinutes((prevState) => prevState - 1);
           setSeconds(refValue.current);
